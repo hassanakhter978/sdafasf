@@ -1,55 +1,50 @@
 # post-management-api
-the API is written in Django for people.
+### Description
+In this assignment, the objective is to develop a Django project titled "Post Management API" aimed at establishing a robust API infrastructure for efficient post management. The primary focus is on the creation of two essential API endpoints: a POST API for generating new posts and a GET API for retrieving a list of existing posts. The assignment leverages the powerful Django Rest Framework (DRF) to streamline the process of API development and data serialization.
+Further enhancements, such as updates, deletions, and authentication, can be added to meet specific project requirements.
+
 ## Installation
-1)If you wish to run your own build, first ensure you have python globally installed in your computer.
+* After Cloning the github repository follow to below steps.
 
-2)After doing this, confirm that you have installed virtualenv globally as well. If not, run this:
 
-        `$ pip install virtualenv`
-
-3)Then, Git clone this repo to your PC
-
-### 4)Dependencies
-  a) Cd into your the cloned repo as such:
+* If you wish to run your own build, first ensure you have python version **3.10.5** globally installed in your computer.
+* After that, run another command in the command prompt to check if the Django web framework version **4.2.5** is installed or not:
 
   
-    `cd post-managment-api`
+          $ django-admin --version
 
-  b) Create and fire up your virtual environment
+* After doing this, confirm that you have installed virtualenv globally as well. If not, run this:
+
+        $ pip install virtualenv
+
+* Then, to activate it, run:
+
+
+         $  source./django env/bin/activate
+* In your terminal navigate to an empty folder and install Django REST framework:
+
+
+            $  pip install django_rest_framework
+* Now for creating a new django app run this command:
+
+
+          $ django-admin startproject app
+  
+* Install the dependencies needed to run the app:
 
   
-     `virtualenv  venv -p python3`
+         $ pip install -r requirements.txt
 
-     
-     `$ source venv/bin/activate`
-     
-
-  c) Install the dependencies needed to run the app:
+* Make those migrations work:
 
   
-    `$ pip install -r requirements.txt`
+        $ python manage.py makemigrations
+        $ python manage.py migrate`
 
-
-  d) Make those migrations work:
-
+* Run the server using command:
   
-    `$ python manage.py makemigrations
+        $ python manage.py runserver
 
-    
-    $ python manage.py migrate`
+* You can now access the file api service on your browser by using
 
-
-
-#### Run It:
-Run the server using command:
-
-
-`$ python manage.py runserver`
-
-
-
-You can now access the file api service on your browser by using
-
-
-
-`http://localhost:8000/api/posts/`
+        $ http://localhost:8000/api/posts/
