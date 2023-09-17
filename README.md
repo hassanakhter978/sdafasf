@@ -1,7 +1,6 @@
 # post-management-api
 ### Description
-In this assignment, the objective is to develop a Django project titled "Post Management API" aimed at establishing a robust API infrastructure for efficient post management. The primary focus is on the creation of two essential API endpoints: a POST API for generating new posts and a GET API for retrieving a list of existing posts. The assignment leverages the powerful Django Rest Framework (DRF) to streamline the process of API development and data serialization.
-Further enhancements, such as updates, deletions, and authentication, can be added to meet specific project requirements.
+In this assignment, the objective is to develop a Django project titled "Post Management API" aimed at establishing a robust API infrastructure for efficient post management. The primary focus is on the creation of two essential API endpoints: a POST API for generating new posts and a GET API for retrieving a list of existing posts.
 
 ## Installation
 * After Cloning the github repository follow to below steps.
